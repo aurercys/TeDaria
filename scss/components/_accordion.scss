@@ -1,0 +1,22 @@
+.accordion{
+    padding: 50px 30px 30px 30px;
+
+    .card {
+        border: 1px solid #e3d0d0;
+    }
+
+    .card-header {
+        background-color: #ffd8e0;
+    }
+
+    .card-body {
+        background-color: antiquewhite;
+        padding-left: 2.25rem;
+    }
+
+    .btn {
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

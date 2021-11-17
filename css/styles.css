@@ -1,0 +1,201 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: antiquewhite;
+  margin: 0px;
+  padding: 0px !important;
+  height: 100vh; }
+
+main {
+  padding-top: 83px;
+  padding-bottom: 60px;
+  height: 100%;
+  overflow: scroll; }
+
+.portada {
+  height: 100%;
+  background-image: url("./../../imagenes/portada.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+.portada_titulo {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.portada__titulo-texto {
+  display: inline-grid;
+  color: brown;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  background: #ffc0cb7d;
+  margin: 0 0 1px 0;
+  padding: 10px 15px;
+  line-height: 50px; }
+
+.portada--espaciado {
+  letter-spacing: 7px; }
+
+.portada__sub-titulo-texto {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  color: brown;
+  background: #ffc0cb7d;
+  padding: 10px 15px; }
+
+nav {
+  background-color: pink; }
+
+.nav-link, .dropdown-item {
+  color: white !important;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.navbar-brand {
+  padding: 0px; }
+
+.dropdown-menu {
+  background: hotpink; }
+
+.dropdown-item:hover {
+  background: pink; }
+
+.navbar-nav {
+  padding-right: 150px; }
+
+.logo {
+  height: auto;
+  width: 70px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: pink;
+  text-align: center; }
+
+.footer__texto {
+  color: white; }
+
+.footer--espaciado {
+  letter-spacing: 3px; }
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0px; }
+
+.productos__titulo {
+  font-style: italic;
+  letter-spacing: 7px;
+  text-align: center;
+  color: black; }
+
+.productos__lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px; }
+
+.productos__item {
+  width: 300px;
+  height: 300px;
+  border: solid 5px palevioletred; }
+
+.productos__img {
+  width: 300px;
+  height: 300px; }
+
+.quienes-somos {
+  padding: 50px 30px 0px 30px; }
+  .quienes-somos .quienes-somos__titulo {
+    font-style: italic;
+    letter-spacing: 7px; }
+  .quienes-somos .quienes-somos__subtitulo {
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 7px; }
+  .quienes-somos .quienes-somos--destacada {
+    font-weight: 800;
+    letter-spacing: 4px; }
+  .quienes-somos .quienes-somos__parrafo {
+    font-size: 16px;
+    text-align: justify; }
+
+.accordion {
+  padding: 50px 30px 30px 30px; }
+  .accordion .card {
+    border: 1px solid #e3d0d0; }
+  .accordion .card-header {
+    background-color: #ffd8e0; }
+  .accordion .card-body {
+    background-color: antiquewhite;
+    padding-left: 2.25rem; }
+  .accordion .btn {
+    color: black;
+    font-size: 18px;
+    font-weight: 600; }
+
+.mi-cuenta {
+  padding: 25px 0px; }
+
+.mi-cuenta--contenido-centrado {
+  justify-content: center; }
+
+.mi-cuenta--margin-top {
+  margin-top: 70px; }
+
+.mi-cuenta--box-paddings {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px; }
+
+.mi-cuenta__titulo {
+  font-style: italic;
+  letter-spacing: 7px;
+  color: black;
+  text-align: center; }
+
+.mi-cuenta__subtitulo {
+  font-style: italic;
+  letter-spacing: 5px;
+  color: black;
+  font-weight: 600; }
+
+.mi-cuenta__titulo-olvidaste-contrasena {
+  font-size: 16px; }
+
+.mi-cuenta__titulo-olvidaste-contrasena a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: darkblue; }
+
+.mi-cuente__subtitulo-form-login {
+  padding-bottom: 10px;
+  display: block;
+  font-weight: 600; }
+
+.mi-cuenta__button {
+  border-radius: 20px;
+  background-color: pink;
+  padding-right: 25px;
+  padding-left: 25px;
+  border: pink;
+  font-size: 18px;
+  font-weight: 600; }
+
+.mi-cuenta__button:hover {
+  background-color: hotpink; }
+
+.mi-cuenta .form-group label {
+  font-size: 18px; }
