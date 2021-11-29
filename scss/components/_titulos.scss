@@ -1,0 +1,22 @@
+.titulo {
+    font-style: italic;
+    letter-spacing: 7px;
+    color: black;
+    text-align: center;
+}
+
+.sub-titulo {
+    font-style: italic;
+    letter-spacing: 5px;
+    color: black;
+    font-weight: 600;
+}
+
+.box-titulo {
+    justify-content: center;
+    margin-bottom: 50px;
+
+    h1 {
+        @extend .titulo;
+    }
+}

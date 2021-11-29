@@ -1,38 +1,38 @@
 nav {
-    background-color: pink;
-}
+    background-color: $primary-color;
 
-.nav-link, .dropdown-item {
-    color: white !important;
-    font-weight: 600;
-    font-size: 15px;
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+    .nav-link, .dropdown-item {
+        color: $primary-text !important;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-.nav-item {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    .nav-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-.navbar-brand {
-    padding: 0px;
-}
+    .navbar-brand {
+        padding: 0px;
+    }
 
-.dropdown-menu {
-    background:hotpink;
-}
+    .dropdown-menu {
+        background: $primary-color-dark;
+    }
 
-.dropdown-item:hover {
-    background:pink;
-}
+    .dropdown-item:hover {
+        background:$primary-color;
+    }
 
-.navbar-nav {
-    padding-right: 150px;
-}
+    .navbar-nav {
+        padding-right: 150px;
+    }
 
-.logo {
-    height: auto;
-    width: 70px;
+    .logo {
+        height: auto;
+        width: 70px;
+    }
 }

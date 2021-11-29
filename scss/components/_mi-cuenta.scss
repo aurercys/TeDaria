@@ -1,63 +1,52 @@
 .mi-cuenta{
-    padding: 25px 0px;
-}
-.mi-cuenta--contenido-centrado { 
-    justify-content: center;
-}
+    @extend .container-paddings;
 
-.mi-cuenta--margin-top { 
-    margin-top: 70px;
-}
+    .mi-cuenta__box-titulo {
+        @extend .box-titulo;
+    }
 
-.mi-cuenta--box-paddings { 
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-}
+    .mi-cuenta__subtitulo {
+        @extend .sub-titulo;
+    }
 
-.mi-cuenta__titulo {
-    font-style: italic;
-    letter-spacing: 7px;
-    color: black;
-    text-align: center;
-}
+    .mi-cuenta--box-paddings { 
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
 
-.mi-cuenta__subtitulo {
-    font-style: italic;
-    letter-spacing: 5px;
-    color: black;
-    font-weight: 600;
-}
+    .mi-cuenta__texto-olvidaste-contrasena {
+        font-size: 16px;
+    }
 
-.mi-cuenta__titulo-olvidaste-contrasena {
-    font-size: 16px;
-}
+    .mi-cuenta__texto-olvidaste-contrasena a:hover, a:visited, a:link, a:active {
+        display: inline-block;
+        text-decoration: none;
+        color: darkblue;
+        margin-bottom: 1rem;
+    }
 
-.mi-cuenta__titulo-olvidaste-contrasena a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
-    color: darkblue;
-}
+    .mi-cuente__subtitulo-form-login {
+        padding-bottom: 10px;
+        display: block;
+        font-weight: 600;
+    }
 
-.mi-cuente__subtitulo-form-login {
-    padding-bottom: 10px;
-    display: block;
-    font-weight: 600;
-}
+    .mi-cuenta__button {
+        border-radius: 20px;
+        background-color: $primary-color;
+        padding-right: 25px;
+        padding-left: 25px;
+        border: $primary-color;
+        font-size: 18px;
+        font-weight: 600;
+    }
 
-.mi-cuenta__button {
-    border-radius: 20px;
-    background-color: pink;
-    padding-right: 25px;
-    padding-left: 25px;
-    border: pink;
-    font-size: 18px;
-    font-weight: 600;
-}
+    .mi-cuenta__button:hover {
+        background-color: $primary-color-dark;
+    }
 
-.mi-cuenta__button:hover {
-    background-color: hotpink;
-}
-
-.mi-cuenta .form-group label {
-    font-size: 18px;
+    .mi-cuenta .form-group label {
+        font-size: 18px;
+    }
 }

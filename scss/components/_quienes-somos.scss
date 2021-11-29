@@ -1,24 +1,22 @@
 .quienes-somos {
-    padding: 50px 30px 0px 30px;
+    @extend .container-paddings;
 
-    .quienes-somos__titulo {
-        font-style: italic;
-        letter-spacing: 7px;
+    .quienes-somos__box-titulo {
+        @extend .box-titulo;
     }
 
     .quienes-somos__subtitulo {
-        font-weight: 600;
-        line-height: 80px;
-        letter-spacing: 7px;
+        @extend .sub-titulo;
+        margin-bottom: 20px;  
+    }
+    
+    .quienes-somos__parrafo {
+        font-size: 16px;
+        text-align: justify;
     }
 
     .quienes-somos--destacada {
         font-weight: 800;
         letter-spacing: 4px;
-    }
-
-    .quienes-somos__parrafo {
-        font-size: 16px;
-        text-align: justify;
     }
 }

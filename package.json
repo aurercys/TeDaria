@@ -1,7 +1,7 @@
 {
   "name": "te-daria",
   "version": "1.0.0",
-  "description": "TE DARIA",
+  "description": "TE DARIA - Sitio Web de Gastronomía típica Venezolana",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
