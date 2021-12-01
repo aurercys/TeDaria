@@ -1,0 +1,77 @@
+.home {
+    display: table;
+    width: 100%;
+    height: calc(100vh - 83px);
+    background: url(./../imagenes/portada.jpg) top center;
+    background-size: cover;
+
+    .home__container {
+        background: rgba(0, 0, 0, 0.6);
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    h1 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        line-height: 48px;
+        font-style: italic;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        color: $primary-text;
+
+        @media (max-width: 768px) {
+              font-size: 28px;
+              line-height: 36px;
+          }
+    }
+
+    h2 {
+        font-family: "Raleway", sans-serif;
+        color: $primary-text;
+        margin-bottom: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+      
+      @media (max-width: 768px) {
+          font-size: 24px;
+          line-height: 26px;
+          margin-bottom: 30px;
+        }
+      }
+
+      h4 {
+        font-family: "Raleway", sans-serif;
+        line-height: 48px;
+        color: $primary-text;
+
+        @media (max-width: 768px) {
+              font-size: 20px;
+              line-height: 36px;
+          }
+    }
+
+    .home__button {
+        font-family: "Raleway", sans-serif;
+        border-radius: 20px;
+        background-color: $primary-color-dark;
+        padding-right: 25px;
+        padding-left: 25px;
+        border: 1px solid $primary-color-light;
+        font-size: 18px;
+        color: $primary-text;
+        margin: 0px 5px; 
+    }
+
+    .home__button:hover {
+        background-color: $secondary-color-dark !important;
+         
+    }
+
+    .home__button:active{
+        background-color: $primary-color-dark !important;
+    }
+}

@@ -2,14 +2,12 @@ body {
   font-family: 'Playfair Display', serif;
   background-color: #faebd7;
   margin: 0px;
-  padding: 0px !important;
-  height: 100vh; }
+  padding: 0px !important; }
 
 main {
   padding-top: 83px;
-  padding-bottom: 60px;
-  height: 100%;
-  overflow: scroll; }
+  min-height: calc(100vh - 60px);
+  overflow: hidden; }
 
 .container-paddings, .quienes-somos, .mi-cuenta {
   padding: 25px 0px; }
@@ -33,35 +31,64 @@ main {
   justify-content: center;
   margin-bottom: 50px; }
 
-.portada {
-  height: 100%;
-  background-image: url("./../imagenes/portada.jpg");
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; }
-  .portada .portada_titulo {
-    display: block;
+.home {
+  display: table;
+  width: 100%;
+  height: calc(100vh - 83px);
+  background: url(./../imagenes/portada.jpg) top center;
+  background-size: cover; }
+  .home .home__container {
+    background: rgba(0, 0, 0, 0.6);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    margin-bottom: 30px; }
-  .portada .portada__titulo-texto {
-    display: inline-grid;
-    color: brown;
-    text-align: center;
+    vertical-align: middle; }
+  .home h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    line-height: 48px;
     font-style: italic;
-    font-weight: 600;
-    background: #ffc0cb7d;
-    margin: 0 0 1px 0;
-    padding: 10px 15px;
-    line-height: 50px; }
-  .portada .portada--espaciado {
-    letter-spacing: 7px; }
-  .portada .portada__sub-titulo-texto {
-    display: inline-block;
-    font-size: 40px;
-    font-weight: 600;
-    color: brown;
-    background: #ffc0cb7d;
-    padding: 10px 15px; }
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #ffffff; }
+    @media (max-width: 768px) {
+      .home h1 {
+        font-size: 28px;
+        line-height: 36px; } }
+  .home h2 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    margin-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px; }
+    @media (max-width: 768px) {
+      .home h2 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 30px; } }
+  .home h4 {
+    font-family: "Raleway", sans-serif;
+    line-height: 48px;
+    color: #ffffff; }
+    @media (max-width: 768px) {
+      .home h4 {
+        font-size: 20px;
+        line-height: 36px; } }
+  .home .home__button {
+    font-family: "Raleway", sans-serif;
+    border-radius: 20px;
+    background-color: #c38691;
+    padding-right: 25px;
+    padding-left: 25px;
+    border: 1px solid #ffe9f4;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0px 5px; }
+  .home .home__button:hover {
+    background-color: #cca6ae !important; }
+  .home .home__button:active {
+    background-color: #c38691 !important; }
 
 nav {
   background-color: #f7b6c1; }
@@ -88,8 +115,6 @@ nav {
     width: 70px; }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 60px;
   line-height: 60px;
@@ -170,12 +195,16 @@ nav {
   background-color: #f7b6c1;
   padding-right: 25px;
   padding-left: 25px;
-  border: #f7b6c1;
+  border: 1px solid #f7b6c1;
   font-size: 18px;
+  color: #ffffff;
   font-weight: 600; }
 
 .mi-cuenta .mi-cuenta__button:hover {
   background-color: #c38691; }
+
+.mi-cuenta .mi-cuenta__button:active {
+  background-color: #f7b6c1 !important; }
 
 .mi-cuenta .mi-cuenta .form-group label {
   font-size: 18px; }

@@ -3,14 +3,12 @@ body {
     background-color: $body-color-bg;
     margin: 0px;
     padding: 0px !important;
-    height: 100vh;
-    }
+}
 
 main {
     padding-top: 83px;
-    padding-bottom: 60px;
-    height: 100%;
-    overflow: scroll;
+    min-height: calc(100vh - 60px);
+    overflow: hidden;
 }
 
 .container-paddings {
