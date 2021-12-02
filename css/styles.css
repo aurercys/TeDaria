@@ -31,6 +31,41 @@ main {
   justify-content: center;
   margin-bottom: 50px; }
 
+nav {
+  background-color: #f7b6c1; }
+  nav .nav-link, nav .dropdown-item {
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  nav .nav-item {
+    padding-left: 10px;
+    padding-right: 10px; }
+  nav .navbar-brand {
+    padding: 0px; }
+  nav .dropdown-menu {
+    background: #c38691; }
+  nav .dropdown-item:hover {
+    background: #f7b6c1; }
+  nav .navbar-nav {
+    padding-right: 150px; }
+  nav .logo {
+    height: auto;
+    width: 70px; }
+
+.footer {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f7b6c1;
+  text-align: center; }
+  .footer .footer__texto {
+    color: #ffffff; }
+  .footer .footer--espaciado {
+    letter-spacing: 3px; }
+
 .home {
   display: table;
   width: 100%;
@@ -90,62 +125,72 @@ main {
   .home .home__button:active {
     background-color: #c38691 !important; }
 
-nav {
-  background-color: #f7b6c1; }
-  nav .nav-link, nav .dropdown-item {
-    color: #ffffff !important;
-    font-weight: 600;
-    font-size: 15px;
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px; }
-  nav .nav-item {
-    padding-left: 10px;
-    padding-right: 10px; }
-  nav .navbar-brand {
-    padding: 0px; }
-  nav .dropdown-menu {
-    background: #c38691; }
-  nav .dropdown-item:hover {
-    background: #f7b6c1; }
-  nav .navbar-nav {
-    padding-right: 150px; }
-  nav .logo {
-    height: auto;
-    width: 70px; }
-
-.footer {
+.header-productos {
+  display: block;
   width: 100%;
   height: 60px;
-  line-height: 60px;
   background-color: #f7b6c1;
-  text-align: center; }
-  .footer .footer__texto {
-    color: #ffffff; }
-  .footer .footer--espaciado {
-    letter-spacing: 3px; }
-
-.productos {
-  display: flex;
-  flex-direction: column;
-  padding: 25px 0px; }
-  .productos .productos__titulo {
+  position: relative;
+  text-align: center;
+  margin-bottom: 24px; }
+  .header-productos div {
+    background-color: #faebd7;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+    padding: 0px 48px;
+    border-radius: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    line-height: 60px;
+    font-size: 35px;
     font-style: italic;
-    letter-spacing: 7px;
-    text-align: center;
-    color: black; }
-  .productos .productos__lista {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px; }
-  .productos .productos__item {
-    width: 300px;
-    height: 300px;
-    border: solid 5px palevioletred; }
-  .productos .productos__img {
-    width: 300px;
-    height: 300px; }
+    color: #c38691;
+    letter-spacing: 5px; }
+
+.productos-container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 40px 0px; }
+  @media (max-width: 425px) {
+    .productos-container {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  .productos-container .card {
+    background-color: #f5f3ec;
+    box-shadow: 2px 2px 9px 0px #d4d2ca;
+    margin: 0px 20px; }
+  .productos-container .card-body {
+    font-family: "Raleway", sans-serif;
+    color: #4c4841; }
+    .productos-container .card-body .card-title {
+      font-size: 1.8em;
+      font-weight: 700; }
+    .productos-container .card-body .card-text .price {
+      font-size: 1.4em;
+      font-weight: 700; }
+      .productos-container .card-body .card-text .price .price-symbol {
+        font-weight: 400;
+        font-size: .7em;
+        position: relative;
+        top: -2px;
+        left: -2px; }
+    .productos-container .card-body .btn {
+      border-radius: 20px;
+      background-color: #f7b6c1;
+      padding: 4px 15px;
+      border: 1px solid #f7b6c1;
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 600;
+      margin: 15px 0px; }
+      .productos-container .card-body .btn:hover {
+        background-color: #c38691; }
+      .productos-container .card-body .btn:active {
+        background-color: #f7b6c1 !important; }
+    .productos-container .card-body:hover .card-title {
+      color: #c38691; }
 
 .quienes-somos .quienes-somos__subtitulo {
   margin-bottom: 20px; }
