@@ -40,6 +40,8 @@ nav {
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px; }
+  nav .nav-link:hover {
+    color: #ffe9f4 !important; }
   nav .nav-item {
     padding-left: 10px;
     padding-right: 10px; }
@@ -49,11 +51,22 @@ nav {
     background: #c38691; }
   nav .dropdown-item:hover {
     background: #f7b6c1; }
-  nav .navbar-nav {
-    padding-right: 150px; }
   nav .logo {
     height: auto;
     width: 70px; }
+  nav .nav-cart a {
+    padding: 0px 0.5rem;
+    display: flex;
+    align-items: center; }
+  nav .nav-cart div span {
+    text-transform: none; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    nav .nav-cart div {
+      visibility: hidden; } }
+  nav .nav-cart i {
+    font-size: xx-large;
+    vertical-align: middle;
+    padding-right: 5px; }
 
 .footer {
   width: 100%;
@@ -65,6 +78,24 @@ nav {
     color: #ffffff; }
   .footer .footer--espaciado {
     letter-spacing: 3px; }
+
+.alert {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  background-color: #74d86c;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  transition: all .3s;
+  z-index: 999;
+  border-radius: 0px;
+  border: 0; }
+  .alert .alert-link {
+    float: right;
+    padding-right: 10px; }
+  .alert:target {
+    transform: translateY(83px); }
 
 .home {
   display: table;
@@ -81,7 +112,7 @@ nav {
     vertical-align: middle; }
   .home h1 {
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 48px;
     font-style: italic;
     letter-spacing: 7px;
@@ -142,7 +173,7 @@ nav {
     padding: 0px 48px;
     border-radius: 20px;
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 60px;
     font-size: 35px;
     font-style: italic;
@@ -168,6 +199,7 @@ nav {
       font-size: 1.8em;
       font-weight: 700; }
     .productos-container .card-body .card-text .price {
+      font-family: sans-serif;
       font-size: 1.4em;
       font-weight: 700; }
       .productos-container .card-body .card-text .price .price-symbol {

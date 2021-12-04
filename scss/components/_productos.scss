@@ -16,7 +16,7 @@
         padding: 0px 48px;
         border-radius: 20px;
         font-family: "Raleway", sans-serif;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 60px;
         font-size: 35px;
         font-style: italic;
@@ -36,8 +36,8 @@
     }
 
     .card {
-        background-color: #f5f3ec;
-        box-shadow: 2px 2px 9px 0px #d4d2ca;
+        background-color: $card-background-color;
+        box-shadow: 2px 2px 9px 0px $card-box-shadow-color;
         margin: 0px 20px;
     }
 
@@ -52,6 +52,7 @@
 
         .card-text {
             .price {
+                font-family: sans-serif;
                 font-size: 1.4em;
                 font-weight: 700;
                 

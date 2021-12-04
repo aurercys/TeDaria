@@ -1,0 +1,23 @@
+.alert {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        background-color: $alert-success-color;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: auto;
+        transition: all .3s;
+        z-index: 999;
+        border-radius: 0px;
+        border: 0;
+
+    .alert-link {
+        float: right;
+        padding-right: 10px;
+    }
+
+    &:target{
+        transform: translateY($header-height);
+    }
+}
+ 

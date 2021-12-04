@@ -6,8 +6,8 @@ body {
 }
 
 main {
-    padding-top: 83px;
-    min-height: calc(100vh - 60px);
+    padding-top: $header-height;
+    min-height: calc(100vh - #{$footer-height});
     overflow: hidden;
 }
 

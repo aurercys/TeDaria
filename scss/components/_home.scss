@@ -1,7 +1,7 @@
 .home {
     display: table;
     width: 100%;
-    height: calc(100vh - 83px);
+    height: calc(100vh - #{$header-height});
     background: url(./../imagenes/portada.jpg) top center;
     background-size: cover;
 
@@ -16,7 +16,7 @@
 
     h1 {
         font-family: "Raleway", sans-serif;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 48px;
         font-style: italic;
         letter-spacing: 7px;

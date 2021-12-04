@@ -10,6 +10,10 @@ nav {
         letter-spacing: 1px;
     }
 
+    .nav-link:hover {
+        color: $primary-color-light !important;
+    }
+
     .nav-item {
         padding-left: 10px;
         padding-right: 10px;
@@ -27,12 +31,31 @@ nav {
         background: $primary-color;
     }
 
-    .navbar-nav {
-        padding-right: 150px;
-    }
-
     .logo {
         height: auto;
         width: 70px;
+    }
+
+    .nav-cart {
+        a {
+            padding: 0px 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        div {
+            span {
+                text-transform: none;
+            }
+            @media (min-width: 768px) and (max-width: 1023px) {
+                visibility: hidden;
+            }
+        }
+        
+        i {
+            font-size: xx-large;
+            vertical-align: middle;
+            padding-right: 5px;
+        }
     }
 }
