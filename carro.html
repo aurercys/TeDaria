@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TE'DARIA | Mi Cuenta</title>
-    <meta name="description" content="Iniciar sesión o registrarse en TE'DARIA">
-    <meta name="keywords" content="TE'DARIA,iniciar sesión,registrarse">
+    <title>TE'DARIA | Sobre Nosostros</title>
+    <meta name="description" content="Somos una emprea familiar, inspirada en nuestas raices">
+    <meta name="keywords" content="TE'DARIA,tienda online venezolana,platos típicos venezolanos,gastronomía venezolana">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -54,52 +54,54 @@
         </nav>
     </header>
     <main>
-        <div class="row mi-cuenta">
-            <div class="col-md-12">
-                <div class="row mi-cuenta__box-titulo">
-                    <h1>Mi Cuenta</h1>
-                </div>
-                <div class="row justify-content-around">
-                    <div class="col-md-5 margins-box mi-cuenta--box-paddings">
-                        <h2 class="mi-cuenta__subtitulo">Iniciar sesión</h2>
-                        <span class="mi-cuente__subtitulo-form-login">¡Compra más rápido y lleva el control de tus pedidos en un solo lugar!</span>
-                        <form>
-                            <div class="form-group">
-                                <label for="inputEmailLogin">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="inputEmailLogin"
-                                    placeholder="Ej.: tucorreo@email.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPasswordLogin">Contraseña</label>
-                                <input type="password" class="form-control" id="inputPasswordLogin" required>
-                            </div>
-                            <a class="mi-cuenta__texto-olvidaste-contrasena" href="#">¿Olvidate la contraseña?</a><br>
-                            <button type="submit" class="btn btn-default mi-cuenta__button">Iniciar Sesión</button>
-                        </form>
-                    </div>
-                    <div class="col-md-5 margins-box mi-cuenta--box-paddings">
-                        <h2 class="mi-cuenta__subtitulo">Registrarme</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="inputNombreRegistro">Nombre</label>
-                                <input type="text" class="form-control" id="inputNombreRegistro"
-                                    placeholder="Ej.: Pedro Perez" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputEmailRegistro">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="inputEmailRegistro"
-                                    placeholder="Ej.: tucorreo@email.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPasswordRegistro">Contraseña</label>
-                                <input type="password" class="form-control" id="inputPasswordRegistro" required>
-                            </div>
-                            <button type="submit" class="btn btn-default mi-cuenta__button ">Registrarme</button>
-                        </form>
-                    </div>
-                </div>
+      <div class="row carro">
+        <div class="col-md-12">
+          <div class="row carro__box-titulo">
+            <h1><i class="bi bi-cart3"></i>Carrito</h1>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-md-10 margins-box">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Producto</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><a href="#"><i class="bi bi-x-circle"></i></a></th>
+                      <td class="carro--destacada">Tequeños</td>
+                      <td class="carro__precio">$600</td>
+                      <td><input type="number" value="1" min="0" max="999" step="1"></td>
+                      <td class="carro__precio">$600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><a href="#"><i class="bi bi-x-circle"></i></a></th>
+                      <td class="carro--destacada">Torta 3 Leches</td>
+                      <td class="carro__precio">$350</td>
+                      <td><input type="number" value="1" min="1" max="999" step="1"></td>
+                      <td class="carro__precio">$350</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td></td>
+                      <td></td>
+                      <td class="carro__total-titulo carro--destacada carro--centrada">TOTAL:</td>
+                      <td class="carro__total-valor">$950</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <a href="#" class="carro__button-comprar btn btn-default">Finalizar La Compra</a>
             </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer>
         <div class="footer">

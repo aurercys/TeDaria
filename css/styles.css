@@ -9,13 +9,13 @@ main {
   min-height: calc(100vh - 60px);
   overflow: hidden; }
 
-.container-paddings, .quienes-somos, .mi-cuenta {
+.container-paddings, .quienes-somos, .mi-cuenta, .carro {
   padding: 25px 0px; }
 
 .margins-box {
   margin: 0px 30px 30px 30px; }
 
-.titulo, .box-titulo h1, .quienes-somos .quienes-somos__box-titulo h1, .mi-cuenta .mi-cuenta__box-titulo h1 {
+.titulo, .box-titulo h1, .quienes-somos .quienes-somos__box-titulo h1, .mi-cuenta .mi-cuenta__box-titulo h1, .carro .carro__box-titulo h1 {
   font-style: italic;
   letter-spacing: 7px;
   color: black;
@@ -27,7 +27,7 @@ main {
   color: black;
   font-weight: 600; }
 
-.box-titulo, .quienes-somos .quienes-somos__box-titulo, .mi-cuenta .mi-cuenta__box-titulo {
+.box-titulo, .quienes-somos .quienes-somos__box-titulo, .mi-cuenta .mi-cuenta__box-titulo, .carro .carro__box-titulo {
   justify-content: center;
   margin-bottom: 50px; }
 
@@ -209,18 +209,8 @@ nav {
         top: -2px;
         left: -2px; }
     .productos-container .card-body .btn {
-      border-radius: 20px;
-      background-color: #f7b6c1;
       padding: 4px 15px;
-      border: 1px solid #f7b6c1;
-      font-size: 18px;
-      color: #ffffff;
-      font-weight: 600;
       margin: 15px 0px; }
-      .productos-container .card-body .btn:hover {
-        background-color: #c38691; }
-      .productos-container .card-body .btn:active {
-        background-color: #f7b6c1 !important; }
     .productos-container .card-body:hover .card-title {
       color: #c38691; }
 
@@ -249,6 +239,18 @@ nav {
     font-size: 18px;
     font-weight: 600; }
 
+.button, .productos-container .card-body .btn, .mi-cuenta .mi-cuenta__button, .carro .carro__button-comprar {
+  border-radius: 20px;
+  background-color: #f7b6c1;
+  border: 1px solid #f7b6c1;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600; }
+  .button:hover, .productos-container .card-body .btn:hover, .mi-cuenta .mi-cuenta__button:hover, .carro .carro__button-comprar:hover {
+    background-color: #c38691; }
+  .button:active, .productos-container .card-body .btn:active, .mi-cuenta .mi-cuenta__button:active, .carro .carro__button-comprar:active {
+    background-color: #f7b6c1 !important; }
+
 .mi-cuenta .mi-cuenta--box-paddings {
   padding-left: 20px;
   padding-right: 20px; }
@@ -268,20 +270,50 @@ nav {
   font-weight: 600; }
 
 .mi-cuenta .mi-cuenta__button {
-  border-radius: 20px;
-  background-color: #f7b6c1;
   padding-right: 25px;
-  padding-left: 25px;
-  border: 1px solid #f7b6c1;
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 600; }
-
-.mi-cuenta .mi-cuenta__button:hover {
-  background-color: #c38691; }
-
-.mi-cuenta .mi-cuenta__button:active {
-  background-color: #f7b6c1 !important; }
+  padding-left: 25px; }
 
 .mi-cuenta .mi-cuenta .form-group label {
   font-size: 18px; }
+
+.carro .carro__precio, .carro .carro__total-valor {
+  font-family: sans-serif; }
+
+.carro .carro__total-titulo, .carro .carro__total-valor {
+  background-color: #ffd8e0;
+  border: 1px solid #cca6ae; }
+
+.carro .carro--destacada {
+  font-weight: 600; }
+
+.carro .carro--centrada {
+  text-align: center; }
+
+.carro .carro__button-comprar {
+  float: right;
+  padding: 4px 15px;
+  margin: 15px 20px; }
+
+.carro .table {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border: 1px solid #cca6ae; }
+  .carro .table thead {
+    background-color: #ffd8e0; }
+    .carro .table thead th {
+      border: none; }
+  .carro .table td, .carro .table th {
+    border-top: 1px solid #cca6ae; }
+  .carro .table tbody tr td {
+    vertical-align: middle; }
+  .carro .table tbody tr th {
+    text-align: center;
+    vertical-align: middle; }
+  .carro .table a {
+    color: #212529; }
+  .carro .table input[type=number] {
+    padding: 9px 12px;
+    background: #f5f3ec;
+    border: 1px solid #dad2bf;
+    border-bottom: 2px solid #dad2bf;
+    border-radius: 6px;
+    box-sizing: border-box; }

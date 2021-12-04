@@ -67,22 +67,9 @@
         }
 
         .btn {
-            border-radius: 20px;
-            background-color: $primary-color;
+            @extend .button;
             padding: 4px 15px;
-            border: 1px solid $primary-color;
-            font-size: 18px;
-            color: $primary-text;
-            font-weight: 600;
             margin: 15px 0px;
-
-            &:hover {
-                background-color: $primary-color-dark;
-            }
-        
-            &:active{
-                background-color: $primary-color !important;
-            }
         }
 
         &:hover {

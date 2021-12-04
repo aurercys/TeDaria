@@ -32,22 +32,9 @@
     }
 
     .mi-cuenta__button {
-        border-radius: 20px;
-        background-color: $primary-color;
+        @extend .button;
         padding-right: 25px;
         padding-left: 25px;
-        border: 1px solid $primary-color;
-        font-size: 18px;
-        color: $primary-text;
-        font-weight: 600;
-    }
-
-    .mi-cuenta__button:hover {
-        background-color: $primary-color-dark;
-    }
-
-    .mi-cuenta__button:active{
-        background-color: $primary-color !important;
     }
 
     .mi-cuenta .form-group label {
