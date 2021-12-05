@@ -18,3 +18,8 @@ main {
 .margins-box {
     margin: 0px 30px 30px 30px;
 }
+
+.border-inputs {
+    border-bottom: 2px solid $input-border-color;
+    box-sizing: border-box;
+}

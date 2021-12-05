@@ -16,6 +16,14 @@
         padding-right: 10px;
     }
 
+    span {
+        padding-left: 10px;
+    }
+
+    &.show {
+        transform: translateY($header-height);
+    }
+
     &:target{
         transform: translateY($header-height);
     }

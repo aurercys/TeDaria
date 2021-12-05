@@ -40,4 +40,10 @@
     .mi-cuenta .form-group label {
         font-size: 18px;
     }
+
+    input, select {
+        @extend .border-inputs;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
 }

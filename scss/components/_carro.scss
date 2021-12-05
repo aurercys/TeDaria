@@ -35,8 +35,9 @@
     }
 
     .table {
-        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: $card-box-shadow;
         border: 1px solid $secondary-color-dark;
+        background-color: $card-background-color;
 
         thead {
             background-color: $secondary-color;
@@ -63,12 +64,11 @@
         }
 
         input[type=number] {
+            @extend .border-inputs;
             padding: 9px 12px;
             background: #f5f3ec;
-            border: 1px solid #dad2bf;
-            border-bottom: 2px solid #dad2bf;
+            border: 1px solid $input-border-color;
             border-radius: 6px;
-            box-sizing: border-box;
         }
     }
 }

@@ -9,13 +9,17 @@ main {
   min-height: calc(100vh - 60px);
   overflow: hidden; }
 
-.container-paddings, .quienes-somos, .mi-cuenta, .carro {
+.container-paddings, .quienes-somos, .mi-cuenta, .carro, .compra {
   padding: 25px 0px; }
 
 .margins-box {
   margin: 0px 30px 30px 30px; }
 
-.titulo, .box-titulo h1, .quienes-somos .quienes-somos__box-titulo h1, .mi-cuenta .mi-cuenta__box-titulo h1, .carro .carro__box-titulo h1 {
+.border-inputs, .mi-cuenta input, .mi-cuenta select, .carro .table input[type=number] {
+  border-bottom: 2px solid #ced4da;
+  box-sizing: border-box; }
+
+.titulo, .box-titulo h1, .quienes-somos .quienes-somos__box-titulo h1, .mi-cuenta .mi-cuenta__box-titulo h1, .carro .carro__box-titulo h1, .compra .compra__box-titulo h1 {
   font-style: italic;
   letter-spacing: 7px;
   color: black;
@@ -27,7 +31,7 @@ main {
   color: black;
   font-weight: 600; }
 
-.box-titulo, .quienes-somos .quienes-somos__box-titulo, .mi-cuenta .mi-cuenta__box-titulo, .carro .carro__box-titulo {
+.box-titulo, .quienes-somos .quienes-somos__box-titulo, .mi-cuenta .mi-cuenta__box-titulo, .carro .carro__box-titulo, .compra .compra__box-titulo {
   justify-content: center;
   margin-bottom: 50px; }
 
@@ -94,6 +98,10 @@ nav {
   .alert .alert-link {
     float: right;
     padding-right: 10px; }
+  .alert span {
+    padding-left: 10px; }
+  .alert.show {
+    transform: translateY(83px); }
   .alert:target {
     transform: translateY(83px); }
 
@@ -239,16 +247,16 @@ nav {
     font-size: 18px;
     font-weight: 600; }
 
-.button, .productos-container .card-body .btn, .mi-cuenta .mi-cuenta__button, .carro .carro__button-comprar {
+.button, .productos-container .card-body .btn, .mi-cuenta .mi-cuenta__button, .carro .carro__button-comprar, .compra .btn {
   border-radius: 20px;
   background-color: #f7b6c1;
   border: 1px solid #f7b6c1;
   font-size: 18px;
   color: #ffffff;
   font-weight: 600; }
-  .button:hover, .productos-container .card-body .btn:hover, .mi-cuenta .mi-cuenta__button:hover, .carro .carro__button-comprar:hover {
+  .button:hover, .productos-container .card-body .btn:hover, .mi-cuenta .mi-cuenta__button:hover, .carro .carro__button-comprar:hover, .compra .btn:hover {
     background-color: #c38691; }
-  .button:active, .productos-container .card-body .btn:active, .mi-cuenta .mi-cuenta__button:active, .carro .carro__button-comprar:active {
+  .button:active, .productos-container .card-body .btn:active, .mi-cuenta .mi-cuenta__button:active, .carro .carro__button-comprar:active, .compra .btn:active {
     background-color: #f7b6c1 !important; }
 
 .mi-cuenta .mi-cuenta--box-paddings {
@@ -276,6 +284,10 @@ nav {
 .mi-cuenta .mi-cuenta .form-group label {
   font-size: 18px; }
 
+.mi-cuenta input, .mi-cuenta select {
+  border-radius: 6px;
+  box-sizing: border-box; }
+
 .carro .carro__precio, .carro .carro__total-valor {
   font-family: sans-serif; }
 
@@ -296,7 +308,8 @@ nav {
 
 .carro .table {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  border: 1px solid #cca6ae; }
+  border: 1px solid #cca6ae;
+  background-color: #f5f3ec; }
   .carro .table thead {
     background-color: #ffd8e0; }
     .carro .table thead th {
@@ -313,7 +326,25 @@ nav {
   .carro .table input[type=number] {
     padding: 9px 12px;
     background: #f5f3ec;
-    border: 1px solid #dad2bf;
-    border-bottom: 2px solid #dad2bf;
-    border-radius: 6px;
-    box-sizing: border-box; }
+    border: 1px solid #ced4da;
+    border-radius: 6px; }
+
+.compra .compra__precio {
+  font-family: sans-serif; }
+
+.compra .badge-secondary {
+  background-color: #cca6ae; }
+
+.compra input, .compra select {
+  border-radius: 6px;
+  box-sizing: border-box; }
+
+.compra hr {
+  border-top: 1px solid #cca6ae; }
+
+.compra .list-group {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border: 1px solid #cca6ae; }
+  .compra .list-group .list-group-item {
+    background-color: #f5f3ec;
+    border: 1px solid #cca6ae; }

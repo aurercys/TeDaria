@@ -1,0 +1,38 @@
+.compra {
+    @extend .container-paddings;
+
+    .compra__box-titulo {
+        @extend .box-titulo;
+    }
+
+    .compra__precio {
+        font-family: sans-serif;
+    }
+
+    .badge-secondary {
+        background-color: $secondary-color-dark;
+    }
+
+    input, select {
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    hr {
+        border-top: 1px solid $secondary-color-dark;
+    }
+
+    .list-group {
+        box-shadow: $card-box-shadow;
+        border: 1px solid $secondary-color-dark;
+
+        .list-group-item {
+            background-color: $card-background-color;
+            border: 1px solid $secondary-color-dark;
+        }
+    }
+
+    .btn {
+        @extend .button;
+    }
+}
