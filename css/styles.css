@@ -86,7 +86,6 @@ nav {
 .alert {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  background-color: #74d86c;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -95,6 +94,8 @@ nav {
   z-index: 999;
   border-radius: 0px;
   border: 0; }
+  .alert.alert-success {
+    background-color: #74d86c; }
   .alert .alert-link {
     float: right;
     padding-right: 10px; }
